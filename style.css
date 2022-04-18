@@ -124,9 +124,10 @@ img {
     padding: 0;
   }
 
-  header {
+   header {
     width: 500px;
     padding: 0;
+    margin-top: 80px;
 
 
   }

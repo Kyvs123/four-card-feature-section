@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*MOBILE */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+div {
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  width: 80vw;
+  height: auto;
+
+  margin: 25px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+
+  background-color: white;
+
+  font-size: 13px;
+  text-align: left;
+
+  border-radius: 5px;
+
+  box-shadow: hsla(230, 15%, 84%, 0.447) 8px 8px 10px;
+}
+
+div p {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 50px;
+  position: relative;
+  bottom: 10%;
+  left: 70%; 
+}
+
+.sup {
+  border-top: solid 4px hsl(180, 62%, 55%);
+}
+
+.t-build {
+  border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: solid 4px hsl(34, 97%, 64%);
+}
+
+.calc {
+  border-top: solid 4px hsl(212, 86%, 64%);
+}
+
+/* RESPONSIVE */
+@media(min-width: 600px) {
+
+
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
+
+  div {
+    
+    width: 90%;
+    margin: 15px;
+
+  }
+
+  img{
+  top: 10%;
+  left: 75%;
+  }
+
+}
+/* DESKTOP */
+@media (min-width: 1000px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 500px;
+    padding: 0;
+
+
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+  main{
+    position: relative;
+  }
+  div{
+    width: 340px;
+    height: 220px;
+    
+    font-size: 13px;
+    padding: 30px;
+  }
+
+  img{
+    left: 81%;
+    top: 5%;
+  }
+  .sup{
+    position: relative;
+
+  }
+  .t-build{
+    position: relative;
+    right: 180px;
+  }
+  .karma{
+    position: relative;
+    left: 190px;
+  }
+  .sup{
+    position: relative;
+    right: 180px;
+    top: 130px;
+  }
+  .calc{
+    position: relative;
+    left: 190px;
+    bottom: 120px;
+  }
+}
